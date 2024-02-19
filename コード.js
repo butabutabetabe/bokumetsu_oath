@@ -108,7 +108,7 @@ function createForm(){
           break;
 
         default:
-         console.log('抜けてます')
+         //console.log('抜けてるよ')
 
     };
 
@@ -158,7 +158,7 @@ function removeFiles(){
 }
 //署名データをゴミ箱へ移動
 function delSignFiles(){
-  const folder = DriveApp.getFolderById("1DRImed9LJYepPC_2a7ZPm7ZFGlOskLqG");
+  const folder = DriveApp.getFolderById("フォルダID");
   const files = folder.getFiles();
   while(files.hasNext()){
     let file = files.next();
